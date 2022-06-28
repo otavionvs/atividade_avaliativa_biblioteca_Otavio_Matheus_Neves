@@ -1,0 +1,28 @@
+{
+    "name": "atividade_avaliativa_biblioteca_otavio_matheus_neves",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/otavionvs/atividade_avaliativa_biblioteca_Otavio_Matheus_Neves.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/otavionvs/atividade_avaliativa_biblioteca_Otavio_Matheus_Neves/issues"
+    },
+    "homepage": "https://github.com/otavionvs/atividade_avaliativa_biblioteca_Otavio_Matheus_Neves#readme",
+    "dependencies": {
+        "express": "^4.18.1",
+        "firebase": "^9.8.4",
+        "firebase-admin": "^11.0.0",
+        "jest": "^28.1.1",
+        "nodemon": "^2.0.18"
+    }
+}
