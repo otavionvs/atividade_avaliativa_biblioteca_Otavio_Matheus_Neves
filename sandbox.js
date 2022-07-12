@@ -25,6 +25,7 @@ async function salvarDado() {
     console.log(savedData);
 }
 
-salvarDado().then(resultado => {
-    console.log(resultado)
-})
+salvarDado();
+// .then(resultado => {
+//     console.log(resultado)
+// })

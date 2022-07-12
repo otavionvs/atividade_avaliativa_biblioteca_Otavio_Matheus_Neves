@@ -1,0 +1,5 @@
+v1 = [{ A: 1 }, { A: 2 }, { A: 3 }];
+v1.filter((e) => { if (e == "2") return e });
+const c = v1.some(e => e.A == 2); //caso exista algum = true
+
+// => - arrowfunction é uma função simplificada
