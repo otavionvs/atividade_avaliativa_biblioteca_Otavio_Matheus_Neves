@@ -1,7 +1,7 @@
 const crud = require("../../crud");
 
 async function salvarLiterato(literato) {
-    const dados = await crud.save("livro", undefined, livro);
+    const dados = await crud.save("livro", undefined, literato);
     return dados;
 }
 
