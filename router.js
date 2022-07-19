@@ -11,10 +11,14 @@ router.use("/autor", autor);
 
 const editora = require("./api/editora/editora.controller");
 
-router.use("/autor", editora);
+router.use("/editora", editora);
 
 const livro = require("./api/livro/livro.controller");
 
-router.use("/autor", livro);
+router.use("/livro", livro);
+
+const locacao = require("./api/livro/livro.controller");
+
+router.use("/locacao", locacao);
 
 module.exports = router;

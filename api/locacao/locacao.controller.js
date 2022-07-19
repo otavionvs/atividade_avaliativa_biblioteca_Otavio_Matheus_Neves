@@ -1,31 +1,29 @@
 const express = require("express");
 const router = express.Router();
 
-const clienteHandler = require("./cliente.handler")
+const locacaoHandler = require("./locacao.handler")
 
 router.post("/", async(req, res) => {
     const body = req.body;
-    const dados = await clienteHandler.salvarCliente(body);
+    const dados = await locacaoHandler.salvarLocacao(body);
     res.json(dados);
 })
 
 router.get("/", async(req, res) => {
-    const dados = await clienteHandler.buscarCliente();
+    const dados = await locacaoHandler.buscarLocacao();
     res.json(dados);
 })
 
 router.delete("/:id", async(req, res) => {
     const id = req.params.id;
-    const dados = await clienteHandler.removerCliente(id);
+    const dados = await locacaoHandler.removerLocacao(id);
     res.json(dados);
 })
 
 router.get("/:id", async(req, res) => {
     const id = req.params.id;
-    const dados = await clienteHandler.buscarClienteId(id);
+    const dados = await locacaoHandler.buscarLocacaoId(id);
     res.json(dados);
 })
-
-
 
 module.exports = router;

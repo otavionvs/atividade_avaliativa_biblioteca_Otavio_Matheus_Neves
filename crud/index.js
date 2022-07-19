@@ -74,7 +74,7 @@ async function getById(nomeTabela, id) {
     if (docSnap.exists()) {
         return docSnap.data();
     } else {
-        return new Error("404 - not found")
+        return new Error("404 - not found");
     }
 
 }
